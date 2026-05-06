@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #6366f1;
+    background: url("../assets/pexels-codioful-7130501.jpg") center/cover no-repeat;
 }
 
 .btn-default {
@@ -20,20 +20,40 @@ body {
     display: flex;
     align-items: center;
     border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 40px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn_default {
+    background-color: #6366f1;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
     font-size: 15px;
     font-weight: 500;
     color: #ffffff;
     cursor: pointer;
     justify-content: center;
     gap: 8px;
-    height: fit-content;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
-.btn-default:hover {
+.btn-default:hover,
+.btn_default:hover {
     background-color: #818cf8;
 }
 
@@ -128,6 +148,42 @@ input::webkit-autofill {
     color: #000;
 }
 
+.error-message {
+    margin-top: 8px;
+    display: block;
+    color: #dc2626;
+    font-size: 12px;
+    min-height: 16px;
+}
+
+.input-field.error {
+    outline: 2px solid #dc2626;
+}
+
+.form-message {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.form-message.hidden {
+    display: none;
+}
+
+.form-message.success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+}
+
+.form-message.error {
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+}
+
 .radio-container {
     grid-column: span 2;
 
@@ -136,4 +192,32 @@ input::webkit-autofill {
 #gender_inputs {
     display: flex;
     gap: 20px;
+}
+
+.radio-box {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.radio-box input[type="radio"] {
+    accent-color: #6366F1;
+}
+
+@media screen and (max-width: 500px) {
+    #form-container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px;
+    }
+
+    #input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+    }
+
+    .form-control[type="date"] {
+        background-color: #FFF;
+    }
 }
