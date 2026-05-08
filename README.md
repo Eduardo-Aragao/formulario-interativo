@@ -3,7 +3,7 @@
 <img width="1899" height="906" alt="image" src="https://github.com/user-attachments/assets/67d355cb-6844-469e-bd3c-f52b36f9f31c" />
 
 <p></p>
-Projeto desenvolvido como parte do Desafio de Avaliação Prática 3 da graduação em Engenharia de Software (**Fametro**). O objetivo foi criar uma interface de formulário robusta, focando em interatividade em tempo real e validação de dados via JavaScript.
+Projeto desenvolvido como parte do Desafio de Avaliação Prática 3 da graduação em Engenharia de Software. O objetivo foi criar uma interface de formulário robusta, focando em interatividade em tempo real e validação de dados via JavaScript.
 
 ## 🎯 Desafio Proposto
 O projeto deveria contemplar obrigatoriamente:
